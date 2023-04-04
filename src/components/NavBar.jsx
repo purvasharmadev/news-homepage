@@ -16,7 +16,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import { useState } from "react";
 
-function Header() {
+function NavBar() {
   const navItems = ["Home", "New", "Popular","Trending","Categories"];
   const [mobileOpen, setMobileOpen] = useState(false);
   const drawerWidth = 240;
@@ -94,4 +94,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default NavBar;
