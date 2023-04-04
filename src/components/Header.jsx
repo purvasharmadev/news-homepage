@@ -1,4 +1,4 @@
-import { brandLogo } from "../constant";
+import { brandLogo,menuIcon } from "../constant";
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -51,7 +51,7 @@ function Header() {
               onClick={handleDrawerToggle}
               sx={{ mr: 2, display: { sm: "none" } }}
             >
-             <MenuIcon />
+             <img src={menuIcon} alt="menu-icon"/>
             </IconButton>
           </Toolbar>
         </Container>

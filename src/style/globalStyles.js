@@ -9,9 +9,7 @@ export default function GlobalStyles(){
                 padding: 0,
                 boxSizing: "border-box",
               },
-              "& .MuiSvgIcon-root":{
-                fontSize:'4rem !important'
-              }
+              
         }} />
 
        
