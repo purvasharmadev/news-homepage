@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
@@ -27,13 +26,13 @@ function NavBar() {
 
   return (
     <>
-      <AppBar elevation={0} position="fixed" sx={{padding:'2rem',backgroundColor:'white',color:'black',fontSize:'5rem' }} >
+      <AppBar elevation={0} position="static" sx={{backgroundColor:'white',color:'black',fontSize:'5rem' }} >
         <Container maxWidth="xl" >
           <Toolbar>
             <Typography
               variant="h6"
               component="div"
-              sx={{ flexGrow: 1}}
+              sx={{ flexGrow: 1,padding:{xs:'2rem'}}}
             >
               <img src={brandLogo} alt="logo" />
             </Typography>
@@ -74,7 +73,7 @@ function NavBar() {
           }}
         >
           <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
+            <Typography variant="h6" sx={{ my:2}}>
             <img src={brandLogo} alt="logo" />
             </Typography>
             <Divider />
@@ -90,6 +89,7 @@ function NavBar() {
           </Box>
         </Drawer>
       </Box>
+
     </>
   );
 }
