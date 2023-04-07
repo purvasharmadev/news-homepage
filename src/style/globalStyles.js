@@ -10,6 +10,11 @@ export default function GlobalStyles(){
                 boxSizing: "border-box",
                 color:'black'
               },
+              img:{
+                display:'block',
+                maxWidth:'100%'
+              },
+             
               
         }} />
 
