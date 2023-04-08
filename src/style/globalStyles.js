@@ -14,6 +14,9 @@ export default function GlobalStyles(){
                 display:'block',
                 maxWidth:'100%'
               },
+              "& .mb-8px":{
+                marginBottom:'8px'
+              }
              
               
         }} />
